@@ -10,18 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
+    @IBOutlet var textView: NSTextView!
+    @IBAction func speakButtonClicked(_ sender: NSButton){
+        print("The speak button was clicked")
 }
 
